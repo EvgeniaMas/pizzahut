@@ -282,6 +282,7 @@ p {
 #fh5co-home .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 #fh5co-home .flexslider .fh5co-overlay {
   position: absolute;
@@ -519,6 +520,8 @@ p {
 #fh5co-sayings .flexslider .slides li {
   font-size: 30px;
   line-height: 1.2;
+  height: 100%;
+  display: block;
 }
 #fh5co-sayings .flexslider .slides li blockquote {
   padding-left: 0;
@@ -882,10 +885,11 @@ p {
 #fh5co-menus .fh5co-food-menu ul li .fh5co-food-desc {
   clear: both;
   float: left;
-  width: 80%;
+  width: 100%;
 }
 #fh5co-menus .fh5co-food-menu ul li .fh5co-food-desc > figure {
-  width: 20%;
+  width: 40%;
+  display: inline-block;
   float: left;
   position: relative;
   margin-right: 4%;
@@ -1398,7 +1402,7 @@ p {
 
 
 li {
-  height: 130px;
+  height: 190px;
 }
 
 .popup {
@@ -1502,3 +1506,37 @@ width: 95%;
     font-weight: 700;
     font-style: italic;
 }
+
+    .zoom {
+      display:inline-block;
+      position: relative;
+    }
+    
+    /* magnifying glass icon */
+    .zoom:after {
+      content:'';
+      display:block; 
+      width:33px; 
+      height:33px; 
+      position:absolute; 
+      top:0;
+      right:0;
+      background:url(icon.png);
+    }
+
+    .zoom img {
+      display: block;
+    }
+
+    .zoom img::selection { background-color: transparent; }
+
+
+    // .product {
+    //   display: inline-block;
+    //   height: 360px;
+      
+    // }
+
+    .fh5co-food-title {
+      display: inline;
+    }
